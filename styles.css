@@ -1,0 +1,53 @@
+body {
+  background: radial-gradient(ellipse at bottom, #022227, #000000 100%);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 250px;
+  overflow: hidden;
+}
+
+/* //TODO: background kordub kui minna mobiilivaatesse */
+
+.text {
+  text-align: center;
+  background-image: url(light-blue-abstract.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.input {
+  text-align: center;
+  padding: 12px 20px;
+}
+
+/* //TODO: lisada nupule stiil */
+button {
+  text-align: center;
+  padding: 12px 20px;
+}
+
+/* //TODO: teha liikuva taustaga tekst */
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10vh;
+  letter-spacing: 1vw;
+  color: white;
+  background: url("light-blue-abstract.jpg");
+  background-size: auto 100%;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
