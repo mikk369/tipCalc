@@ -28,7 +28,7 @@ button {
   padding: 12px 20px;
 }
 
-/* //TODO: teha liikuva taustaga tekst */
+/* //TODO: teha tekstile animatsioon */
 @keyframes shine {
   from {
     background-position: center 0;
