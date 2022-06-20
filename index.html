@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Document</title>
+    <title>Tip Calculator</title>
   </head>
   <body>
     <div class="text">
@@ -19,12 +19,29 @@
     </div>
     <div class="input">
       <input
-        class="input"
+        class="billamt"
         placeholder="INSERT THE BILL"
         type="text"
         style="width: 15%"
       />
-      <button>Calculate</button>
+      <input
+        class="billprot"
+        placeholder="TIP %"
+        type="text"
+        style="width: 5%"
+      />
+      <input
+        class="billspl"
+        placeholder="SPLIT"
+        type="text"
+        style="width: 2.5%"
+      />
+      <button type="button" id="calculate">Calculate</button>
+    </div>
+
+    <div id="totalTip">
+      <sup>$</sup><span id="tip">0.00</span>
+      <small id="each">each</small>
     </div>
 
     <script src="calc.js"></script>
