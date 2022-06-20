@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: radial-gradient(ellipse at bottom, #022227, #000000 100%);
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   margin-top: 250px;
   overflow: hidden;
 }
@@ -10,7 +16,9 @@ body {
 /* //TODO: background kordub kui minna mobiilivaatesse */
 
 .text {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
   background-image: url(light-blue-abstract.jpg);
   background-clip: text;
   -webkit-background-clip: text;
@@ -21,21 +29,23 @@ body {
   text-align: center;
   padding: 12px 20px;
 }
+.billamt {
+  padding: 12px 20px;
+  text-align: center;
+}
+.billprot {
+  padding: 12px 10px;
+  text-align: center;
+}
+.billspl {
+  padding: 12px 0px;
+  /* margin: 10px; */
+}
 
 /* //TODO: lisada nupule stiil */
 button {
   text-align: center;
   padding: 12px 20px;
-}
-
-/* //TODO: teha tekstile animatsioon */
-@keyframes shine {
-  from {
-    background-position: center 0;
-  }
-  to {
-    background-position: center 200%;
-  }
 }
 
 h1 {
@@ -50,4 +60,30 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite;
+}
+
+#totalTip {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 50px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
 }
