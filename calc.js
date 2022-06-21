@@ -3,10 +3,11 @@ calculate.addEventListener("click", () => {
   let billamt = document.querySelector(".billamt").value;
   let billprot = document.querySelector("#billprot").value;
   let billspl = document.querySelector(".billspl").value;
-  let tip = document.querySelector("tip").value;
-
+  //Hide the tip amount on load
+  document.getElementById("totalTip").style.display = "none";
+  document.getElementById("each").style.display = "none";
   //validate
-  if (billamt === "" || billprot == 0) {
+  if (billamt === "" || billprot == 0 || billspl == 0) {
     alert("Please enter values");
     return;
   }
