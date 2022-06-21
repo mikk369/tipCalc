@@ -24,19 +24,22 @@
         type="text"
         style="width: 15%"
       />
-      <input
-        class="billprot"
-        placeholder="TIP %"
-        type="text"
-        style="width: 5%"
-      />
+      <select id="billprot">
+        <option disabled selected value="0">SELECT %</option>
+        <option value="0.3">30%</option>
+        <option value="0.2">20%</option>
+        <option value="0.15">15%</option>
+        <option value="0.1">10%</option>
+        <option value="0.05">5%</option>
+      </select>
       <input
         class="billspl"
         placeholder="SPLIT"
         type="text"
-        style="width: 2.5%"
+        style="width: 5%"
       />
-      <button type="button" id="calculate">Calculate</button>
+
+      <button id="calculate" type="button">Calculate</button>
     </div>
 
     <div id="totalTip">
