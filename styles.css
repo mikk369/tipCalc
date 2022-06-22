@@ -57,7 +57,7 @@ button {
   padding: 12px 20px;
 }
 button:hover {
-  background: #022227;
+  background: #8d8f8f;
 }
 
 h1 {
@@ -75,18 +75,11 @@ h1 {
 }
 
 #totalTip {
+  
   font-size: 100px;
   text-align: center;
   color: white;
   margin-top: 100px;
-}
-
-#totalTip:before {
-  content: "Tip amount";
-  font-size: 50px;
-  font-weight: bold;
-  display: block;
-  text-transform: uppercase;
 }
 
 #totalTip sup {
