@@ -7,16 +7,8 @@
 body {
   background: radial-gradient(ellipse at bottom, #022227, #000000 100%)
     no-repeat fixed;
-  /* background-size: cover; */
-  height: 100rem;
-  overflow-x: hidden;
-  min-height: 100vh;
-  overflow-y: hidden;
-  overflow: hidden;
-  padding: 80px;
+  height: 100vh;
 }
-
-/* //TODO: background kordub kui minna mobiilivaatesse */
 
 .text {
   display: flex;
@@ -51,7 +43,6 @@ body {
   text-align: center;
 }
 
-/* //TODO: lisada nupule stiil */
 button {
   text-align: center;
   padding: 12px 20px;
@@ -62,16 +53,43 @@ button:hover {
 
 h1 {
   display: flex;
-
   font-family: "Montserrat", sans-serif;
   font-size: 10vh;
   letter-spacing: 1vw;
   color: white;
   background: url("light-blue-abstract.jpg");
   background-size: auto 100%;
-  /* background-clip: border-box; */
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* media querys for mobile views */
+
+@media (max-width: 769px) {
+  h1 {
+    font-size: 9vh;
+    letter-spacing: 1vw;
+  }
+}
+
+@media (max-width: 426px) {
+  h1 {
+    letter-spacing: 1vw;
+    font-size: 5vh;
+  }
+}
+@media (max-width: 376px) {
+  h1 {
+    letter-spacing: 1vw;
+    font-size: 4.4vh;
+  }
+}
+
+@media (max-width: 321px) {
+  h1 {
+    font-size: 3.7vh;
+  }
 }
 
 #totalTip {
